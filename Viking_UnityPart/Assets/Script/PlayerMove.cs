@@ -134,15 +134,16 @@ public class PlayerMove : MonoBehaviour
             movingSpeed = 1f;
             onground = false;
         }
-        else if(time_f2 >= 2f){
+        else if(time_f2 >= 1.5f){
             time_f2 = 0f;
             GameObject enemy = Instantiate(EnemyPrefab,EnemyCollection.transform);
-            Vector3 EnemyPos = transform.position + playerForward * 10;
+            Vector3 EnemyPos = transform.position + playerForward * 13;
             enemy.transform.position = EnemyPos;
             enemy.SetActive(true);
             GameObject nextground = Instantiate(GroundPrefab, GroundCollection.transform);
             Vector3 pos = transform.position;
             pos.y -= 0.2f;
+            pos += playerForward * 3;
             nextground.transform.position = pos;
         }
 
@@ -211,7 +212,7 @@ public class PlayerMove : MonoBehaviour
     public void ExitBtn()
     {
         Time.timeScale = 1f;
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
     public void RetryBtn()
     {

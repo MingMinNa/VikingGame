@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AttackArea
     - CoinGenerate
     - EnemyViking
+    - MainMenu
     - PlayerMove
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -24,7 +25,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateEditor
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -74,12 +74,84 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayBtn
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: ExitBtn
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: HelpBtn
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerMove
     methodName: RetryBtn
   - assembly: Assembly-CSharp
     fullTypeName: PlayerMove
     methodName: ExitBtn
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1560}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 2178}
+    - Class: 114
+      Script: {instanceID: 2594}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 3080}
+    - Class: 114
+      Script: {instanceID: 4058}
+    - Class: 114
+      Script: {instanceID: 4306}
+    - Class: 114
+      Script: {instanceID: 4992}
+    - Class: 114
+      Script: {instanceID: 5680}
+    - Class: 114
+      Script: {instanceID: 5996}
+    - Class: 114
+      Script: {instanceID: 26684}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/VikingGame.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -98,8 +170,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -128,17 +198,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2178}
-    - Class: 114
       Script: {instanceID: 2594}
     - Class: 114
       Script: {instanceID: 2796}
     - Class: 114
       Script: {instanceID: 3080}
-    - Class: 114
-      Script: {instanceID: 4058}
-    - Class: 114
-      Script: {instanceID: 4306}
     - Class: 114
       Script: {instanceID: 4922}
     - Class: 114
@@ -1022,7 +1086,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4d2b066a1d611705734ce16c9c404dda
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/VikingGame.unity
-  playerPath: C:/Users/User/Desktop/GitHub/Unity_VikingGame/GamePart/VikingGame.exe
+  playerPath: C:/Users/User/Desktop/GitHub/Unity_VikingGame/Viking_GamePart/VikingGame.exe

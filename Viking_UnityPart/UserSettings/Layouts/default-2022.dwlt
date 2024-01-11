@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 117
+  controlID: 43
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1173.6
-    height: 424.8
+    height: 378.4
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 239.2
-    height: 424.8
+    height: 378.4
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -214,7 +214,7 @@ MonoBehaviour:
     x: 239.2
     y: 0
     width: 934.39996
-    height: 424.8
+    height: 378.4
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -223,7 +223,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,9 +240,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 424.8
+    y: 378.4
     width: 1173.6
-    height: 283.60004
+    height: 330.00003
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
@@ -298,9 +298,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 7.2000003
-    y: 505.6
+    y: 459.2
     width: 1172.6
-    height: 262.60004
+    height: 309.00003
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/VikingPackage/Models/Mini Viking
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -330,27 +330,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/VikingPackage/Models/Mini Viking
+  - Assets/Script
   m_LastFoldersGridSize: 68
-  m_LastProjectPath: C:\Users\User\Desktop\GitHub\Unity_VikingGame\UnityPart
+  m_LastProjectPath: C:\Users\User\Desktop\GitHub\Unity_VikingGame\Viking_UnityPart
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 113.39996}
-    m_SelectedIDs: b85e0000
-    m_LastClickedID: 24248
-    m_ExpandedIDs: 00000000b45e0000b65e0000ba5e0000e85e0000866b000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f85e0000
+    m_LastClickedID: 24312
+    m_ExpandedIDs: 00000000c65e0000c85e0000ca5e0000cc5e0000ce5e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scenes
-      m_OriginalName: Scenes
+      m_Name: Script
+      m_OriginalName: Script
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24290
+      m_UserData: 24312
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b45e0000b65e0000b85e0000ba5e0000
+    m_ExpandedIDs: 00000000c65e0000c85e0000ca5e0000cc5e0000ce5e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -419,7 +419,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 58.900574}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 68
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -446,7 +446,7 @@ MonoBehaviour:
     x: 7.2000003
     y: 80.8
     width: 238.2
-    height: 403.8
+    height: 357.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 12170000
       m_LastClickedID: 0
-      m_ExpandedIDs: 64b0ffffb4b0ffff5eb4ffffc2f3fffffef3ffffa0f7ffff30fbffff48610000
+      m_ExpandedIDs: d26affff1e6bffffa26effffc66effffea71ffff1e75ffff6a75ffffbe76ffff8ed2ffffaaf1ffff74f3ffffdaf3ffff70f6ffffacf6ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -509,7 +509,7 @@ MonoBehaviour:
     x: 246.40001
     y: 80.8
     width: 932.39996
-    height: 403.8
+    height: 357.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -563,22 +563,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 932.39996
-      height: 382.8
-    m_Scale: {x: 0.59902257, y: 0.59902257}
-    m_Translation: {x: 466.19998, y: 191.23209}
+      height: 336.4
+    m_Scale: {x: 0.525625, y: 0.525625}
+    m_Translation: {x: 466.19998, y: 168.2}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -778.2678
-      y: -319.2402
-      width: 1556.5356
-      height: 639.041
+      x: -886.9441
+      y: -320
+      width: 1773.8882
+      height: 640
     m_MinimalGUI: 1
-  m_defaultScale: 0.598125
-  m_LastWindowPixelSize: {x: 1165.5, y: 504.75}
+  m_defaultScale: 0.525625
+  m_LastWindowPixelSize: {x: 1165.5, y: 446.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -607,7 +607,7 @@ MonoBehaviour:
     x: 246.40001
     y: 80.8
     width: 932.39996
-    height: 403.8
+    height: 357.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -914,9 +914,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 677.0078, y: 413.3285, z: -131}
+    m_Target: {x: 940.9759, y: 442.2303, z: 7.0339355}
     speed: 2
-    m_Value: {x: 677.0078, y: 413.3285, z: -131}
+    m_Value: {x: 940.9759, y: 442.2303, z: 7.0339355}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -962,13 +962,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09626884, y: 0.061258655, z: -0.0059697437, w: 0.993492}
+    m_Target: {x: 0.058169357, y: -0.0032114165, z: 0.00015370121, w: 0.99834377}
     speed: 2
-    m_Value: {x: 0.096264884, y: 0.061256137, z: -0.0059694983, w: 0.9934512}
+    m_Value: {x: 0.05816691, y: -0.0032112815, z: 0.00015369475, w: 0.99830174}
   m_Size:
-    m_Target: 236.81812
+    m_Target: 403.43124
     speed: 2
-    m_Value: 236.81812
+    m_Value: 403.43124
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1014,9 +1014,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 7.2000003
-    y: 505.6
+    y: 459.2
     width: 1172.6
-    height: 262.60004
+    height: 309.00003
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     x: 246.40001
     y: 80.8
     width: 932.39996
-    height: 403.8
+    height: 357.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

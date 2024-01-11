@@ -310,6 +310,7 @@
 "Assets/Script/AttackArea.cs"
 "Assets/Script/CoinGenerate.cs"
 "Assets/Script/EnemyViking.cs"
+"Assets/Script/MainMenu.cs"
 "Assets/Script/PlayerMove.cs"
 -langversion:9.0
 
