@@ -106,6 +106,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -129,13 +133,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4306}
     - Class: 114
+      Script: {instanceID: 4922}
+    - Class: 114
       Script: {instanceID: 4992}
     - Class: 114
       Script: {instanceID: 5680}
     - Class: 114
       Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 26684}
+      Script: {instanceID: 7292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,6 +157,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 331
       Script: {instanceID: 0}
     Assets/Scenes/VikingGame.unity:
     - Class: 1
@@ -180,6 +188,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -218,7 +230,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 7368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -782,7 +794,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: e7dbaefc72937946aae444aac0c14f41
+      Hash: 7f5fbfb348b56c3496e46947d5aa7af6
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerMove
@@ -1028,6 +1040,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: cc3a88fb89d222be4e40e281a5f783e6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1086,12 +1104,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 4d2b066a1d611705734ce16c9c404dda
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MainMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

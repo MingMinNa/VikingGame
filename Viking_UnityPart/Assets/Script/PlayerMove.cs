@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float sensitivity = 5.0f; // ·Æ¹«ÆF±Ó«×
@@ -15,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject HealthBar;
     [SerializeField] GameObject EscPanel;
     [SerializeField] GameObject PlayTime, Coin;
+    [SerializeField] GameObject AudioPlayer;
     float rotationX = 0f;
     bool playerState = true; // true: alive, false: dead
     float movingSpeed = 6f;
@@ -22,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     float blood = 200, maxBlood = 200;
     int coin = 0;
 
+    bool FootStop = true;
     float time_f = 0f, time_f2 = 0f, playTime = 0.0f; // f: recover, f2: nextGroundGeneratorTime
     bool onground = true, walking = false, running = false;
     Animator animator;
@@ -32,6 +35,8 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioPlayer.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("voiceParameter");
+        transform.GetComponent<AudioSource>().volume = 0.6f;
         Cursor.lockState = CursorLockMode.Locked; 
         playerState = true;
         onground = true; walking = false; running = false;
@@ -167,13 +172,27 @@ public class PlayerMove : MonoBehaviour
             movingSpeed = 3f;
         }
         if(Input.GetMouseButtonDown(0)) {
-            if( AttackCD >= 1.0f)
+            if( AttackCD >= 1.5f)
             {
                 AttackCD = 0f;
                 AttackSpt.SetActive(true);
                 AttackSpt.transform.GetComponent<AttackArea>().throwWeapon();
                 animator.SetTrigger("Attack");
             }
+        }
+        if (running)
+            transform.GetComponent<AudioSource>().pitch = 1f;
+        else
+            transform.GetComponent<AudioSource>().pitch = 0.6f;
+        if (walking && FootStop == true)
+        {
+            FootStop = false;
+            transform.GetComponent<AudioSource>().Play();
+        }
+        else if(walking == false)
+        {
+            FootStop = true;
+            transform.GetComponent<AudioSource>().Stop();
         }
         animator.SetBool("Walking", walking);
         animator.SetBool("Running", running);

@@ -10,12 +10,14 @@ public class EnemyViking : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] GameObject CoinPrefab,CoinCollection;
     [SerializeField] GameObject EscPanel;
+
     Animator animator;
     float distance;
     float movingSpeed = 1.7f;
     bool findPlayer = false;
     bool stiff = false;
     float stiff_t = 0f;
+    float hurt_t = 0f;
     public bool dead = false;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,8 @@ public class EnemyViking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dead || EscPanel.activeSelf == true) return;
+        if(hurt_t <= 1.2f)   hurt_t += Time.deltaTime;
+        if (dead || EscPanel.activeSelf == true) return;
         if (stiff)
         {
             stiff_t += Time.deltaTime;
@@ -63,9 +66,11 @@ public class EnemyViking : MonoBehaviour
     }
     public void GetDamage(int damage)
     {
-        if(dead) return;
+        if(dead || hurt_t <= 1.2f) return;
         currentBlood -= damage;
+        hurt_t = 0f;
         healthBar.GetComponent<Slider>().value = currentBlood / maxBlood;
+        Vector3 distanceVector = transform.position - Player.transform.position;
         if(currentBlood <= 0)
         {
             // Enemy Die
